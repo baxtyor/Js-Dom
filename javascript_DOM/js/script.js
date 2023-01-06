@@ -138,7 +138,7 @@
 // ul.prepend(li) // element oxiriga qoshadi
 // ul.before(li) // ul elementidan avval qoshadi
 // ul.after(li) // ul elementidan keyin qoshadi
-// li.remove() // elementni 
+// li.remove() // elementni
 // console.log(li)
 
 // let orange = document.querySelector('.orange')
@@ -151,7 +151,6 @@
 //   li.textContent = name;
 //   ul.append(li);
 // }
-
 
 // let numbersBlock = document.querySelector(".numbers")
 // let iterationCount = Math.round(Math.random() * 7) + 1
@@ -166,22 +165,108 @@
 //     let numberBlock = document.querySelector
 // }
 
-
-
 // function theeme(elem) {
 //     document.body.classList.toggle('dark')
 //     if(elem.children[0].classList.contains
 //         )
 // }
 
+// lesson 4
+// cssText
+// let mystyle = `
+//     background-color: rgb(35, 188, 35);
+//     color: aliceblue;
+//     text-align: center;
+//     font-size: 1.3em;
+//     padding: 5px;
+//     cursor: pointer;
+// `
+// let p = document.querySelector("p")
+// p.style.cssText = mystyle
+
+// p.style.display = "none"
+// p.style.position = "fixed"
+// p.style.overflow = "scroll"
+// console.log(p.style)
+// let colors = ["red", 'green', "yellow"]
+// setInterval(() => { p.style.backgroundColor = colors[Math.round(Math.random() * colors.length)] }, 1000)
+// function minScroll() {
+//     window.scrollTo(0, 0)
+// }
+// function maxScroll() {
+//     let s = window.scrollY
+//     console.log(s)
+//     window.scrollTo(0, window.scrollY += 500)
+// }
+
+// console.log(Event)
+// click ,contextmenu ,  keypress , keyup, keydown
+// element.addEventListener(event, handler, [options]);
+// let elem = document.querySelector('.main')
+// elem.addEventListener("contextmenu", () => { console.log("Mouse event.") })
+
+// document.body.addEventListener("click", function () {
+//     console.log("Mouse event.")
+// })
+// window.addEventListener('keydown', function (e) {
+//     console.log(this.event) // joriy hodisa obyekti
+//     console.log(this.event.key) // joriy hodisa obyekti
+//     console.log(e.target) // hodisa ro'y bergan element
+// })
+// window.addEventListener("keyup", function () {
+//     if (this.event.key === 'q' && this.event.ctrlKey) {
+//         window.open("https://google.com")
+//     }
+// })
+
+// const keys = document.querySelector("p");
+// window.addEventListener("keyup", function (e) {
+//   let str = "";
+//   str == e.keys;
+//   console.log(e.key);
+//   keys.innerHTML = e.key;
+// });
+
+// let elem = document.querySelector('.text')
+// elem.addEventListener("contextmenu", () => { console.log("Mouse event.") })
+
+// document.body.addEventListener("click", function () {
+//     console.log("Mouse event.")
+// })
+
+// lesson 5
+// console.log(document.forms);
+// let form = document.forms[0];
+
+// console.log(form.elements)  // elementlari , maydonlari
+// console.log(form.length)
+// console.log(form.action)
+// console.log(form.method)
+
+// for (el of form.elements) {
+//   el.classList.add("form-control")
+// }
+// console.log(form.name);
+// console.log(form.email);
+
+// form.onsubmit = function (e) {
+//   for (let item of e.target.elements) {
+//     let p = document.createElement("p");
+//     p.innerHTML = item.value;
+//     document.querySelector(".data").append(p);
+//   }
+// };
+
+let form = document.forms[0];
+form.addEventListener("change", function (e) {
+  let block = document.querySelector(".data");
+  block = form.elements[0].value;
+  if ()
+  
+});
 
 
-
-
-
-
-
-
+// let form = document.forms[0]
 
 
 
